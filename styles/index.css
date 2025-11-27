@@ -1,0 +1,126 @@
+.hero-media video {
+  width: 600px;
+  box-shadow: var(--shadow-default);
+  margin: 60px auto 0;
+  border-radius: 8px;
+}
+
+.content-section {
+  text-align: center;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  margin-bottom: 30px;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px auto 80px;
+  background: linear-gradient(45deg, #4169e1 0%, #7fffd4 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all var(--transition-default);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.cta-link:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.cta-arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-default);
+}
+
+.cta-link:hover .cta-arrow {
+  transform: translateX(3px);
+}
+
+.external-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 20px 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  background: linear-gradient(
+    135deg,
+    #0044cc 0%,
+    #0066ff 15%,
+    #00aaff 30%,
+    #00ffcc 45%,
+    #7fffd4 60%,
+    #00ffcc 75%,
+    #0066ff 90%,
+    #0044cc 100%
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite alternate;
+  background-size: 600% auto;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 102, 255, 0.3);
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 100% center; }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-media video {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .cta-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .content-section {
+    font-size: 14px;
+  }
+}

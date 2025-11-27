@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sobre MVP-ESO - Projecte de recerca de Proves Matemàtiques Visuals per a Educació Secundària" />
+    <title>Sobre - MVP-ESO</title>
+    <link rel="icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-brand">
+        <a href="index.html" class="brand-link">
+          <img src="../assets/images/logo.png" alt="MVP-ESO Logo" class="brand-logo" />
+          <div class="brand-text">
+            <h1 class="brand-title">MVP-ESO</h1>
+            <p class="brand-subtitle">proves matemàtiques visuals eso</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Canviar mode fosc">
+          <svg
+            id="sun-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+
+          <svg
+            id="moon-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            style="display: none"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav id="sidebar-menu" class="sidebar-nav" aria-label="Navegació principal">
+      <div class="sidebar-header">
+        <img src="../assets/images/logo.png" alt="MVP-ESO Logo" />
+        <button id="close-sidebar" class="sidebar-close" aria-label="Tancar menú lateral">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Inici</a></li>
+        <li class="nav-item has-submenu">
+          <a href="animations.html" class="nav-link submenu-toggle">
+            Animacions
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="submenu-arrow"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="animations.html#algebraic-identities" class="submenu-link">Identitats Algebraiques</a></li>
+            <li class="submenu-item"><a href="animations.html#triangle-area" class="submenu-link">Àrea del Triangle</a></li>
+            <li class="submenu-item"><a href="animations.html#pythagorean-theorem" class="submenu-link">Teorema de Pitàgores</a></li>
+            <li class="submenu-item"><a href="animations.html#quadratic-formula" class="submenu-link">Fórmula Quadràtica</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <main class="about-main">
+      <div class="page-controls">
+        <button id="hamburger-btn" class="hamburger-menu" aria-label="Obrir menú lateral" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="language-switcher">
+          <a href="../en/about.html" class="language-link">EN</a>
+          <span class="language-separator">|</span>
+          <a href="../ca/about.html" class="language-link current" aria-current="page">CA</a>
+        </div>
+      </div>
+
+      <article class="about-content">
+        <header class="about-header">
+          <h1 class="about-title">Sobre Aquest Projecte</h1>
+        </header>
+
+        <section class="about-section">
+          <p class="about-text">
+            Aquest lloc web és part del nostre <em>Treball de Recerca</em>, dedicat a
+            presentar proves matemàtiques d'educació secundària a través d'explicacions clares, raonament
+            visual i animacions digitals. L'objectiu principal és mostrar que les matemàtiques esdevenen
+            significativament més intuïtives quan les idees abstractes es combinen amb visualització estructurada.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Motivació</h2>
+          <p class="about-text">
+            En les aules tradicionals, les proves sovint s'ensenyen d'una manera purament simbòlica i estàtica.
+            Tot i ser rigorós, aquest enfocament pot fer que els conceptes fonamentals semblin distants o massa formals.
+            La motivació darrere d'aquest projecte és apropar aquest buit integrant eines digitals modernes
+            que ajudin els estudiants a "veure" la lògica darrere de les matemàtiques que aprenen.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Metodologia</h2>
+          <p class="about-text">El projecte segueix una metodologia mixta que combina:</p>
+          <ul class="methodology-list">
+            <li class="methodology-item">
+              <strong>Tècniques de prova matemàtica clàssiques</strong>, assegurant rigor lògic.
+            </li>
+            <li class="methodology-item">
+              <strong>Eines visuals i computacionals</strong>, principalment utilitzant ManimCE, per construir
+              animacions que il·lustrin cada pas de la prova.
+            </li>
+            <li class="methodology-item">
+              <strong>Tecnologies web</strong>
+              per presentar les proves, explicacions i animacions en un format estructurat i accessible.
+            </li>
+            <li class="methodology-item">
+              <strong>Observació comparativa</strong>
+              examinant com les demostracions animades milloren la comprensió en comparació amb presentacions
+              només de text.
+            </li>
+          </ul>
+          <p class="about-text">
+            Tot el contingut d'aquest lloc web (textos, diagrames i animacions) s'ha creat específicament
+            per al propòsit d'aquesta investigació.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Eines i Tecnologies</h2>
+          <p class="about-text">
+            Per produir les visualitzacions matemàtiques i el lloc web, s'han utilitzat les següents eines:
+          </p>
+          <ul class="tools-list">
+            <li class="tool-item">
+              <strong>Manim Community Edition</strong> -
+              per generar animacions matemàtiques.
+            </li>
+            <li class="tool-item">
+              <strong>HTML, CSS i JavaScript</strong> -
+              per construir el lloc web i la navegació d'idiomes.
+            </li>
+            <li class="tool-item">
+              <strong>Visual Studio Code</strong> -
+              com a entorn de desenvolupament principal.
+            </li>
+            <li class="tool-item">
+              <strong>Git & GitHub</strong> -
+              per al control de versions i desplegament del lloc.
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Idiomes del Lloc Web</h2>
+          <p class="about-text">
+            El lloc està disponible tant en <strong>anglès</strong> com en <strong>català</strong>, amb l'objectiu d'arribar a un públic més ampli i donar suport a la presentació acadèmica bilingüe.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Agraïments</h2>
+          <p class="about-text">
+            Voldria agrair als meus professors supervisores l'orientació proporcionada durant tot el procés d'investigació.
+          </p>
+          <p class="about-text">
+            Agraïments especials també als autors i col·laboradors de ManimCE i a la comunitat de codi obert, les eines dels quals van fer possibles les visualitzacions.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-copyright">&copy; <span id="year"></span> jzhezheng — Treball de Recerca</p>
+        <div class="footer-languages">
+          <a href="../en/index.html" class="footer-language">English</a>
+          <span class="language-separator">|</span>
+          <a href="../ca/index.html" class="footer-language">Català</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/theme.js"></script>
+    <script src="../scripts/back-to-top.js"></script>
+    <script src="../scripts/year.js"></script>
+  </body>
+</html>

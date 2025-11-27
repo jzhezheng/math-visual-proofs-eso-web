@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proves Matemàtiques Visuals per a Educació Secundària - Proves Clàssiques, Animacions" />
+    <title>MVP-ESO - Proves Matemàtiques Visuals per a ESO</title>
+    <link rel="icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-brand">
+        <a href="index.html" class="brand-link">
+          <img src="../assets/images/logo.png" alt="MVP-ESO Logo" class="brand-logo" />
+          <div class="brand-text">
+            <h1 class="brand-title">MVP-ESO</h1>
+            <p class="brand-subtitle">demostracions matemàtiques visuals eso</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Canviar mode fosc">
+          <svg
+            id="sun-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+
+          <svg
+            id="moon-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            style="display: none"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav id="sidebar-menu" class="sidebar-nav" aria-label="Navegació principal">
+      <div class="sidebar-header">
+        <img src="../assets/images/logo.png" alt="MVP-ESO Logo" />
+        <button id="close-sidebar" class="sidebar-close" aria-label="Tancar menú lateral">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Inici</a></li>
+        <li class="nav-item has-submenu">
+          <a href="animations.html" class="nav-link submenu-toggle">
+            Animacions
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="submenu-arrow"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="animations.html#identitats-algebraiques" class="submenu-link">Identitats Algebraiques</a></li>
+            <li class="submenu-item"><a href="animations.html#area-triangle" class="submenu-link">Àrea del Triangle</a></li>
+            <li class="submenu-item"><a href="animations.html#teorema-pitagores" class="submenu-link">Teorema de Pitàgores</a></li>
+            <li class="submenu-item"><a href="animations.html#formula-quadratica" class="submenu-link">Fórmula Quadràtica</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="page-controls">
+        <button id="hamburger-btn" class="hamburger-menu" aria-label="Obrir menú lateral" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="language-switcher">
+          <a href="../en/index.html" class="language-link">EN</a>
+          <span class="language-separator">|</span>
+          <a href="../ca/index.html" class="language-link current" aria-current="page">CA</a>
+        </div>
+      </div>
+
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Demostracions Visuals per a les Matemàtiques de Secundària</h1>
+          <p class="hero-subtitle">Demostracions Clàssiques, Idees Animades</p>
+        </div>
+        <div class="hero-media">
+          <video src="../assets/animations/SumDifferenceProduct.mp4" autoplay muted loop playsinline aria-label="Animació mostrant la prova d'identitat algebraica"></video>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="content-section">
+        <div class="section-intro">
+          <p class="intro-text">
+            Aquest projecte presenta proves matemàtiques a través d'explicacions visuals i animacions
+            creades amb ManimCE. L'objectiu és fer els conceptes abstractes més intuïtius per als estudiants
+            integrant visualització digital i raonament rigorós.
+          </p>
+
+          <a href="about.html" class="cta-link about-cta">
+            Llegeix més sobre aquest projecte
+            <svg class="cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <p class="intro-text">
+            Si voleu veure aquestes animacions i les seves descripcions, feu clic al botó de sota.
+          </p>
+
+          <a href="animations.html" class="cta-link animations-cta">
+            Explora les animacions
+            <svg class="cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <p class="intro-text">
+            Hem obert el codi font que genera aquestes animacions a GitHub. Si esteu interessats,
+            podeu fer clic al botó de sota per accedir al nostre repositori. També podeu llegir
+            més sobre el nostre projecte allà.
+          </p>
+
+          <a href="https://github.com/jzhezheng/math-visual-proofs-eso" target="_blank" rel="noopener noreferrer" class="cta-link external-cta">
+            Codi font de les animacions
+            <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-copyright">&copy; <span id="year"></span> jzhezheng — Treball de Recerca</p>
+        <div class="footer-languages">
+          <a href="../en/index.html" class="footer-language">English</a>
+          <span class="language-separator">|</span>
+          <a href="../ca/index.html" class="footer-language">Català</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/theme.js"></script>
+    <script src="../scripts/back-to-top.js"></script>
+    <script src="../scripts/year.js"></script>
+  </body>
+</html>

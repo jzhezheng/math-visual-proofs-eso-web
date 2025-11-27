@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About MVP-ESO - Visual Mathematical Proofs for Secondary Education research project" />
+    <title>About - MVP-ESO</title>
+    <link rel="icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-brand">
+        <a href="index.html" class="brand-link">
+          <img src="../assets/images/logo.png" alt="MVP-ESO Logo" class="brand-logo" />
+          <div class="brand-text">
+            <h1 class="brand-title">MVP-ESO</h1>
+            <p class="brand-subtitle">math visual proofs eso</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg
+            id="sun-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+
+          <svg
+            id="moon-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            style="display: none"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav id="sidebar-menu" class="sidebar-nav" aria-label="Main navigation">
+      <div class="sidebar-header">
+        <img src="../assets/images/logo.png" alt="MVP-ESO Logo" />
+        <button id="close-sidebar" class="sidebar-close" aria-label="Close sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-submenu">
+          <a href="animations.html" class="nav-link submenu-toggle">
+            Animations
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="submenu-arrow"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item"><a href="animations.html#algebraic-identities" class="submenu-link">Algebraic Identities</a></li>
+            <li class="submenu-item"><a href="animations.html#triangle-area" class="submenu-link">Triangle Area</a></li>
+            <li class="submenu-item"><a href="animations.html#pythagorean-theorem" class="submenu-link">Pythagorean Theorem</a></li>
+            <li class="submenu-item"><a href="animations.html#quadratic-formula" class="submenu-link">Quadratic Formula</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="about-main">
+      <div class="page-controls">
+        <button id="hamburger-btn" class="hamburger-menu" aria-label="Open sidebar" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="language-switcher">
+          <a href="../en/about.html" class="language-link current" aria-current="page">EN</a>
+          <span class="language-separator">|</span>
+          <a href="../ca/about.html" class="language-link">CA</a>
+        </div>
+      </div>
+
+      <article class="about-content">
+        <header class="about-header">
+          <h1 class="about-title">About This Project</h1>
+        </header>
+
+        <section class="about-section">
+          <p class="about-text">
+            This website is part of our <em>Treball de Recerca</em> (A Catalan highschool Research Project), dedicated to
+            presenting secondary-school mathematical proofs through clear explanations, visual
+            reasoning, and digital animations. The main objective is to show that mathematics becomes
+            significantly more intuitive when abstract ideas are combined with structured visualization.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Motivation</h2>
+          <p class="about-text">
+            In traditional classrooms, proofs are often taught in a purely symbolic and static way.
+            While rigorous, this approach can make fundamental concepts feel distant or overly formal.
+            The motivation behind this project is to bridge this gap by integrating modern digital tools
+            that help students "see" the logic behind the mathematics they learn.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Methodology</h2>
+          <p class="about-text">The project follows a mixed methodology combining:</p>
+          <ul class="methodology-list">
+            <li class="methodology-item">
+              <strong>Classical mathematical proof techniques</strong>, ensuring logical rigor.
+            </li>
+            <li class="methodology-item">
+              <strong>Visual and computational tools</strong>, mainly using ManimCE, to construct
+              animations that illustrate each proof step.
+            </li>
+            <li class="methodology-item">
+              <strong>Web technologies</strong>
+              to present the proofs, explanations, and animations in a structured and accessible format.
+            </li>
+            <li class="methodology-item">
+              <strong>Comparative observation</strong>
+              examining how animated demonstrations improve understanding compared to text-only
+              presentations.
+            </li>
+          </ul>
+          <p class="about-text">
+            All content on this website (texts, diagrams, and animations) has been specifically created
+            for the purpose of this research.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Tools and Technologies</h2>
+          <p class="about-text">
+            To produce the mathematical visualizations and the website, the following tools were used:
+          </p>
+          <ul class="tools-list">
+            <li class="tool-item">
+              <strong>Manim Community Edition</strong> -
+              to generate mathematical animations.
+            </li>
+            <li class="tool-item">
+              <strong>HTML, CSS, and JavaScript</strong> -
+              to build the website and language navigation.
+            </li>
+            <li class="tool-item">
+              <strong>Visual Studio Code</strong> -
+              as the main development environment.
+            </li>
+            <li class="tool-item">
+              <strong>Git & GitHub</strong> -
+              for version control and deployment of the site.
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Website Languages</h2>
+          <p class="about-text">
+            The site is available in both <strong>English</strong> and <strong>Catalan</strong>, aiming to reach a wider audience and support bilingual academic presentation.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h2 class="section-title">Acknowledgements</h2>
+          <p class="about-text">
+            I would like to thank my supervising teachers for the guidance provided throughout the research process.
+          </p>
+          <p class="about-text">
+            Special thanks also go to the authors and contributors of ManimCE and the open-source community, whose tools made the visualizations possible.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-copyright">&copy; <span id="year"></span> jzhezheng — Treball de Recerca</p>
+        <div class="footer-languages">
+          <a href="../en/index.html" class="footer-language">English</a>
+          <span class="language-separator">|</span>
+          <a href="../ca/index.html" class="footer-language">Català</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/theme.js"></script>
+    <script src="../scripts/back-to-top.js"></script>
+    <script src="../scripts/year.js"></script>
+  </body>
+</html>
